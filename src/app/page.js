@@ -1,8 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { FaTrashAlt } from "react-icons/fa";
-import { MdEditSquare } from "react-icons/md";
 
 export default function Home() {
   const [task, setTask] = useState("");
@@ -85,14 +83,14 @@ export default function Home() {
                 onClick={() => editHandler(i)}
                 className="bg-yellow-600 text-white rounded-lg px-2 py-2 mx-2 hover:bg-yellow-700"
               >
-                <MdEditSquare />
+                edit
               </button>
 
               <button
                 onClick={() => deleteHandler(i)}
                 className="bg-red-600 text-white rounded-lg px-2 py-2 mx-2 hover:bg-red-700"
               >
-                <FaTrashAlt />
+               delete
               </button>
             </div>
           </div>
